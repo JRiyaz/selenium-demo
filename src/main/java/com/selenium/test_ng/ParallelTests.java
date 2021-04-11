@@ -13,9 +13,10 @@ public class ParallelTests {
     @Test
     @DisplayName("Open Chrome")
     void openChrome() {
-        File file = new File("D:\\Softwares\\web-drivers\\chromedriver.exe");
+//        File file = new File("D:\\Softwares\\web-drivers\\chromedriver.exe");
 
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+//        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
@@ -26,9 +27,10 @@ public class ParallelTests {
     @DisplayName("Open Edge")
     void openEdge() {
 
-        File file = new File("D:\\Softwares\\web-drivers\\msedgedriver.exe");
+//        File file = new File("D:\\Softwares\\web-drivers\\msedgedriver.exe");
 
-        System.setProperty("webdriver.edge.driver", file.getAbsolutePath());
+//        System.setProperty("webdriver.edge.driver", file.getAbsolutePath());
+        System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
 
         WebDriver driver = new EdgeDriver();
 

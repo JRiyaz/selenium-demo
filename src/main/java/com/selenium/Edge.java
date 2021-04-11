@@ -12,9 +12,10 @@ public class Edge {
 
     public static void main(String[] args) {
 
-        File file = new File("D:\\Softwares\\web-drivers\\msedgedriver.exe");
+//        File file = new File("D:\\Softwares\\web-drivers\\msedgedriver.exe");
 
-        System.setProperty("webdriver.edge.driver", file.getAbsolutePath());
+//        System.setProperty("webdriver.edge.driver", file.getAbsolutePath());
+        System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
 
         WebDriver edge = new EdgeDriver();
 

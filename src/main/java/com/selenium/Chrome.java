@@ -12,9 +12,10 @@ public class Chrome {
 
     public static void main(String[] args) {
 
-        File file = new File("D:\\Softwares\\web-drivers\\chromedriver.exe");
+//        File file = new File("D:\\Softwares\\web-drivers\\chromedriver.exe");
 
-        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+//        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 
         WebDriver chrome = new ChromeDriver();
 

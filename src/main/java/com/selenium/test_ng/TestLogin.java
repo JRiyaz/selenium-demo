@@ -10,7 +10,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -22,9 +21,9 @@ public class TestLogin {
 
     @BeforeMethod
     void beforeTest() throws IOException {
-        File file = new File("D:\\Softwares\\web-drivers\\msedgedriver.exe");
+//        File file = new File("D:\\Softwares\\web-drivers\\msedgedriver.exe");
 
-        System.setProperty("webdriver.edge.driver", file.getAbsolutePath());
+        System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
 
         edge = new EdgeDriver();
 
@@ -62,6 +61,6 @@ public class TestLogin {
     @AfterMethod
     void afterTest() throws InterruptedException {
         Thread.sleep(2000);
-//		edge.quit();
+		edge.quit();
     }
 }

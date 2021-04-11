@@ -10,9 +10,10 @@ public class SetUp {
 
     public static WebDriver get(final String url, final int time) {
 
-        final File file = new File("D:\\Softwares\\web-drivers\\msedgedriver.exe");
+//        final File file = new File("D:\\Softwares\\web-drivers\\msedgedriver.exe");
 
-        System.setProperty("webdriver.edge.driver", file.getAbsolutePath());
+//        System.setProperty("webdriver.edge.driver", file.getAbsolutePath());
+        System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
 
         final WebDriver edge = new EdgeDriver();
         edge.get(url);
