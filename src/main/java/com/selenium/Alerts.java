@@ -19,6 +19,7 @@ public class Alerts {
         System.out.println(alert.getText());
 
         Thread.sleep(2000);
+
         alert.accept();
     }
 }

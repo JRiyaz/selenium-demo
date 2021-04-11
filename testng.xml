@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suit SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MySuit">
+
+    <!--    <parameter name="username" value="abc@xyz.com"></parameter>-->
+    <!--    <parameter name="password" value="simplilearn"></parameter>-->
+
+    <test thread-count="5" name="testName">
+        <classes>
+            <class name="com.selenium.test_ng.TestBeforeAndAfter"/>
+            <class name="com.selenium.test_ng.TestGroup"/>
+            <class name="com.selenium.test_ng.TestSampleOne"/>
+            <class name="com.selenium.test_ng.TestSampleTwo"/>
+            <class name="com.selenium.test_ng.TestLogin"/>
+        </classes>
+    </test>
+
+    <!--    Parallel Tests      -->
+    <!--    <test thread-count="2" name="testName" parallel="methods">-->
+    <!--        <classes>-->
+    <!--            <class name="com.selenium.test_ng.ParallelTests"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test thread-count="5" name="testName">-->
+    <!--        &lt;!&ndash;        Classes     &ndash;&gt;-->
+    <!--        <classes>-->
+    <!--            <class name="com.selenium.test_ng.TestBeforeAndAfter"/>-->
+
+    <!--            <class name="com.selenium.test_ng.TestSampleTwo">-->
+    <!--                <methods>-->
+    <!--                    &lt;!&ndash;  This will include all the tests with the methods name starting with Test&ndash;&gt;-->
+    <!--                    <include name="Test."/>-->
+    <!--                    &lt;!&ndash;  This will exclude the TestTwo method&ndash;&gt;-->
+    <!--                    <exclude name="TestTwo"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+
+    <!--            &lt;!&ndash;     Include the group class     &ndash;&gt;-->
+    <!--            <class name="com.selenium.test_ng.TestGroup"/>-->
+    <!--        </classes>-->
+
+    <!--        &lt;!&ndash;        Groups   | Only those methods will get executed which has groups parameter like "@Test(groups = {"sanity"})"   &ndash;&gt;-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="sanity"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--    </test>-->
+
+</suite>
